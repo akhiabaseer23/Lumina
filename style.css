@@ -119,3 +119,50 @@ footer {
 #cartLink:hover {
     text-decoration: underline;
 }
+.reviews {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.reviews {
+    padding: 2rem;
+    background-color: #f5ebdd; /* same as body background */
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+#reviewForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+#reviewForm input, 
+#reviewForm select, 
+#reviewForm textarea {
+    padding: 10px;
+    border: 1px solid #fadcd9;
+    border-radius: 5px;
+}
+
+#reviewsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: hsl(0, 11%, 96%);
+}
+
+.review strong {
+    color: #B8860B;
+}

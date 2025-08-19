@@ -38,3 +38,22 @@ document.querySelectorAll(".product-card button").forEach(btn => {
 
 // Run count update on page load
 updateCartCount();
+
+function displayReviews() {
+    reviewsList.innerHTML = "";
+
+    if (reviews.length === 0) {
+        reviewsList.innerHTML = "<p>No reviews yet. Be the first to share your experience!</p>";
+        return;
+    }
+
+    reviews.forEach(r => {
+        const div = document.createElement("div");
+        div.classList.add("review");
+        div.innerHTML = `
+            <strong>${r.name}</strong> - ${"⭐".repeat(r.rating)}<br>
+            <p>${r.comment}</p>
+        `;
+        reviewsList.appendChild(div);
+    });
+}
